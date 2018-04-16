@@ -30,7 +30,7 @@
     "axios": "^0.18.0",
     "element-ui": "^2.3.2",
     "pagoda-ui": "^1.0.22",
-    "vuex": "3^.0.1"
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     {{#lint}}
