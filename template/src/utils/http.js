@@ -13,7 +13,7 @@ const instance = axios.create({
 instance.interceptors.response.use(function (response) {
   console.log(response)
   if (response.headers.sessionstatus === 'timeout' || response.headers.Sessionstatus === 'timeout') {
-    window.location.href = window.location.origin + '/rbac-backend/login'
+    window.location.href = window.location.origin + '/rbac-backend/login' // 登录超时，跳转单点登录链接
   }
   // Do something with response data
   return response

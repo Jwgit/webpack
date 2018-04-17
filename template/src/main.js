@@ -7,15 +7,16 @@ import App from './App'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import pagodaComponents from 'pagoda-ui'
-import BdcSelect from 'pagoda-ui/src/components/basic-data/bdc-select'
 import utils from './utils/index'
 
 pagodaComponents.formGroup.registerComponents({
   'bdc-select': {
-    component: BdcSelect
+    component: pagodaComponents.bdcSelect
   }
 })
 Vue.use(ElementUI, { size: 'small' })
+pagodaComponents.erpTable.redirectUrl = 'xxx' // 登录超时，跳转单点登录链接
+pagodaComponents.bdcSelect.redirectUrl = 'xxx' // 登录超时，跳转单点登录链接
 Vue.use(pagodaComponents)
 Vue.use(utils)
 import router from './router'

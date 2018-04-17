@@ -28,8 +28,8 @@
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "axios": "^0.18.0",
-    "element-ui": "^2.3.2",
-    "pagoda-ui": "^1.0.22",
+    "element-ui": "~2.3.3",
+    "pagoda-ui": "^1.0.23",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
